@@ -6,3 +6,22 @@ Evaluating different fine-tuning strategies for aneurysmal subarachnoid hematoma
 2. Run the `preprocess_annotated_images.mlx` script to preprocess the DICOM images and annotations
 3. Run `sbatch job_tune_cv.py` with the desired arguments.
 
+```
+usage: tune_cv.py [-h] [--tune TUNE] [--name NAME] [--epoch_number EPOCH_NUMBER] [--level LEVEL] [--decomposition DECOMPOSITION] [--trained_model_path TRAINED_MODEL_PATH]
+                  [--train]
+
+Train/tune a model
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --tune TUNE           parts of model to tune
+  --name NAME           experiment name
+  --epoch_number EPOCH_NUMBER
+                        number of epochs to tune
+  --level LEVEL         level of model
+  --decomposition DECOMPOSITION
+                        decomposition method
+  --trained_model_path TRAINED_MODEL_PATH
+                        path to pre-trained model
+  --train               train the model
+```
