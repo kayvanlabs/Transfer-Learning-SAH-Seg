@@ -2,30 +2,7 @@ import torch
 from torch.nn import init
 
 from util.models.baseline.unet import Unet
-# from util.models.baseline.drunet import DRUnet
-# from util.models.baseline.seunet import SEUnet
-# from util.models.baseline.rrunet import RRUnet
-# from util.models.baseline.resunet import ResUnet
-# from util.models.baseline.attunet import AttUnet
-# from util.models.baseline.attrrunet import AttRRUnet
-
-
-
 from util.models.experiment.mv import MV
-# from util.models.experiment.mv_se import MV_SE
-# from util.models.experiment.mv_se_res import MV_SE_RES
-#from util.models.experiment.mv_f import MV_F
-# from util.models.experiment.mv_eval import MV_eval
-
-# from util.models.experiment.tlunet import TLUnet
-
-# from util.models.experiment.burger_unet.burger import Burger
-# from util.models.experiment.tensorly_unet import TensorlyUnet
-# from util.models.experiment.tensorlyse_unet import TensorlySEUnet
-# from util.models.experiment.burger_unet_tcl.burger_tcl import Burger_TCL
-# from util.models.experiment.burger_unet_plus.burger_plus import Burger_Plus
-
-
 
 def get_model(name, device, level=0):
 
