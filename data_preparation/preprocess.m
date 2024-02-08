@@ -1,12 +1,8 @@
 function preprocess(startI, endI, fileSize, fold, pernum)
 
 % Paths
-% data_path = 'A:\Projects\Polytrauma\Data\Raw\subarachnoid_hematoma\raw_images\';
-% data_path = '/Volumes/med-kayvan-lab/Projects/Polytrauma/Data/Raw/subarachnoid_hematoma/raw_images/'
-data_path = '/nfs/turbo/med-kayvan-lab/Projects/Polytrauma/Data/Raw/subarachnoid_hematoma/raw_images/';
-% save_path = '/Volumes/med-kayvan-lab/Projects/Polytrauma/Data/Processed/hodgman/subarachnoid_hematoma/';
-% save_path = 'A:\Projects\Polytrauma\Data\Processed\hodgman\subarachnoid_hematoma\';
-save_path = '/nfs/turbo/med-kayvan-lab/Projects/Polytrauma/Data/Processed/hodgman/subarachnoid_hematoma/';
+data_path = '';
+save_path = '';
 
 % Get all patient IDs in data path
 Pids = dir(data_path);
