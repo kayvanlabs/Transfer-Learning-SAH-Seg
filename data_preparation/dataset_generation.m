@@ -11,11 +11,11 @@ PatientsData = struct('brains', {},  'annots', {}, 'dicomImgs', {},...
     'meta', {}, 'intensity_mean', {}, 'Pid', {}, 'Datatype', {});
 index = 0;
 %% Extract brain imags from each patient in ProTECT dataset
-save_path = 'Z:\Users\hemingy\TBI\';
-prefix = 'Z:\Users\hemingy\TBI\RawDataset\';
+save_path = 'save/data/here/';
+prefix = 'path/to/ProTECT/data/';
 pathProT = [prefix 'ProTECT/'];
 
-subfolder = ["Craig", "Heming", "TrauImg"];
+subfolder = ['your_subfolders_here', 'another_one'];
 for ii = 1:length(subfolder)
     %%
     casePath = strcat(pathProT, subfolder(ii));
@@ -52,7 +52,7 @@ end
 pathImg = [prefix 'Data_TrauImg' filesep];
 pathAnnot = [prefix 'Data_TrauImg_Annotation' filesep];
 
-subfolder = ["Craig", "Heming"];
+subfolder = ["your_subfolders_here", "another_one"];
 for ii = 1:length(subfolder)
     %%
     casePath = strcat(pathAnnot, subfolder(ii));
