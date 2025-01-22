@@ -25,10 +25,10 @@ class Config():
 
     # Data Loading Configurations
     load_num = 5
-    training_directory = "/nfs/turbo/med-kayvan-lab/Projects/Polytrauma/Data/Processed/Heming/MatData/Annotated/"
-    new_data_directory = "/nfs/turbo/med-kayvan-lab/Projects/Polytrauma/Data/Processed/hodgman/subarachnoid_hematoma/new_annots/"
-    all_new_data_directory = "/nfs/turbo/med-kayvan-lab/Projects/Polytrauma/Data/Processed/hodgman/subarachnoid_hematoma/new_annots_all/"
-    new_data_testing_directory = "/nfs/turbo/med-kayvan-lab/Projects/Polytrauma/Data/Processed/hodgman/subarachnoid_hematoma/new_annots_test/"
+    training_directory = "/path/to/training/data/"
+    new_data_directory = "/path/to/new/data/"
+    all_new_data_directory = "/path/to/all/new/data/"
+    new_data_testing_directory = "/path/to/new/test/data/"
 
     # configurations for tuning a pre-trained model
     tune = True
@@ -46,7 +46,5 @@ class Config():
             exp_name = exp_series +'_locksplit_' + model_type  + "_epoch" + str(epoch_number) + "_lr" + str(learning_rate)
         else:
             exp_name = exp_series + '_' + model_type + "_epoch" + str(epoch_number) + "_lr" + str(learning_rate)
-
-    # trained_model_path = f'/nfs/turbo/med-kayvan-lab/Projects/Polytrauma/Code/Members/hodgman/New_Hematoma_Pytorch/outputs/{exp_name}/checkpoints/COMPLETED.pt'
-    # trained_model_path = '/nfs/turbo/med-kayvan-lab/Projects/Polytrauma/Code/Members/hodgman/New_Hematoma_Pytorch/outputs/MV_60_2_0.001_0.1_2_locksplit_MV_level2_epoch60_lr0.001/checkpoints/COMPLETED.pt'
-    trained_model_path = '/nfs/turbo/med-kayvan-lab/Projects/Polytrauma/Code/Members/hodgman/New_Hematoma_Pytorch/outputs/level-2-MV-pre-training_locksplit_epoch60_lr0.001/checkpoints/COMPLETED.pt'
+            
+trained_model_path = '/path/to/trained_model_state_dict.pt'
